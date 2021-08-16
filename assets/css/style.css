@@ -3,9 +3,25 @@
     justify-content: center;
 }  
 
-.dropdownBorder{
-    margin: 25px;
-    border: solid black 2px;
-    padding: 1rem;
+.mainCard{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
 }
 
+.previousResults {
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
