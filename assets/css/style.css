@@ -1,0 +1,11 @@
+.container{   
+    display: flex;
+    justify-content: center;
+}  
+
+.dropdownBorder{
+    margin: 25px;
+    border: solid black 2px;
+    padding: 1rem;
+}
+
