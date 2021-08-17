@@ -1,4 +1,3 @@
-  
 let apiKeyCurrency = '4b83b17cefa1b951b3da100dbb82ba7e';
 let apiKeyCurrencyURL = `http://data.fixer.io/api/latest?access_key=${apiKeyCurrency}`
 let apiKeyCrypto = 'fregfzsfixaw8mmf6bd7';
