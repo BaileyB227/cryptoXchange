@@ -137,10 +137,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Bailey Bennett - baileyb227@gmail.com
-Prany Davey - 77269d@gmail.com 
-Dylan Fontenot - dylanfontenot@protonmail.com
-Jeffrey McLeod - 
+<ul>
+    <li>Bailey Bennett - baileyb227@gmail.com</li>
+    <li>Prany Davey - 77269d@gmail.com</li>
+    <li>Dylan Fontenot - dylanfontenot@protonmail.com</li>
+    <li>Jeffrey McLeod - </li>
 
 Project Link: [https://https://github.com/BaileyB227/Project1](https://https://github.com/BaileyB227/Project1)
 
