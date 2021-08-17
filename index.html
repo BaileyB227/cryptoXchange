@@ -9,8 +9,98 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <h1 class="nav-item"><a href="#" class="nav-link active" aria-current="page">Welcome to our Crypto currency exchange</a></h1>
+          
+        </ul>
+      </header>
+      <main>
+            <!-- Holds a container of the 2 drop down buttons first one shows crypto the user wants. The second one is a world currency selected -->
+            <row class="container">
+                <section>
+                    <div class="dropdown dropdownBorder">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        crypto placeholder
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </section>
+                <section>   
+                    <div class="dropdownBorder">
+                        💨
+                    </div>
+                </section>
+                <section>
+                    <div class="dropdown dropdownBorder">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Currency placeholder
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </section>
+            </row>
+            <!-- Displays the results for the selected 2 items -->
+            <section class="mainCard">
+                <div class="">
+                    <img src="..." class="card-img-top" alt="placeholder for crypto">
+                    <img src="..." class="card-img-top" alt="placeholder for currency">
+                    <div class="card-body">
+                      <p class="card-text">Place holder of showing the results of the 2 drop down conversion.</p>
+                    </div>
+                </div>
+            </section>
 
+      </main>
+      <footer>
+          <!-- Displays your most recent 5 searches -->
+          <section class="row">
+            <div class="card text-center previousResults" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">This will display what crypto to what currency</h5>
+                  <p class="card-text">shows 1st most recent search from local storage</p>
+                </div>
+              </div>
+              
+              <div class="card text-center previousResults" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">This will display what crypto to what currency</h5>
+                  <p class="card-text">shows 2nd most recent search from local storage</p>
+                </div>
+              </div>
+              
+              <div class="card text-center previousResults" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">This will display what crypto to what currency</h5>
+                  <p class="card-text">shows 3rd most recent search from local storage</p>
+                </div>
+              </div>
+
+              <div class="card text-center previousResults" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">This will display what crypto to what currency</h5>
+                  <p class="card-text">shows 4th most recent search from local storage</p>
+                </div>
+              </div>
+
+              <div class="card text-center previousResults" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">This will display what crypto to what currency</h5>
+                  <p class="card-text">shows 5th most recent search from local storage</p>
+                </div>
+              </div>
+
+          </section>
+
+      </footer>
 
     <script src="./assets/js/script.js"></script>
 </body>
