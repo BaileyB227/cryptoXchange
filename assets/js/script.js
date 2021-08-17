@@ -13,3 +13,20 @@ fetch (apiFetch)
 fetch (apiFetch2)
 .then(headers => headers.json())
 .then(data => {console.log(data)})
+
+// Convert button, puts converted value in box and adds to local storage
+$("#convertBtn").on("click", function(){
+    convertOptions();
+    storeConversion();
+})
+
+function convertOptions(){
+    // Grabs the value of the selected options
+    let $cryptoChoice = $('#cryptoOptions').val();
+    let $currencyChoice = $('#currencyOptions').val();
+
+    fetch()
+
+    console.log($cryptoChoice)
+    console.log($currencyChoice)
+}

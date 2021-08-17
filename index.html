@@ -19,7 +19,7 @@
             <!-- Holds a container of the 2 drop down buttons first one shows crypto the user wants. The second one is a world currency selected -->
             <row class="container">
                 <section>
-                  <select name="converts" id="Selection">
+                  <select name="converts" id="cryptoOptions">
                     <option value="BTC">Bitcoin/BTC</option>
                     <option value="ETH">Ethererum/ETH</option>
                     <option value="ADA">Cardano/ADA</option>
@@ -38,7 +38,7 @@
                     </div>
                 </section>
                 <section>
-                  <select name="converts" id="Selection">
+                  <select name="converts" id="currencyOptions">
                     <option value="USD">US Dollar/USD</a>
                     <option value="EUR">Euro/EUR</a>
                     <option value="JPY">Japanese Yen/JPY</a>
@@ -51,7 +51,7 @@
                     <option value="NZD">New Zealand Dollar/NZD</a>
                   </select>
                 </section>
-                <button type="button" class="btn btn-primary">Convert</button>
+                <button type="button" class="btn btn-primary" id="convertBtn">Convert</button>
             </row>
             <!-- Displays the results for the selected 2 items -->
             <section class="mainCard">
@@ -59,7 +59,7 @@
                     <img src="..." class="card-img-top" alt="placeholder for crypto"><span id="cryptoValue"></span>
                     <img src="..." class="card-img-top" alt="placeholder for currency"><span id="currencyValue"></span>
                     <div class="card-body">
-                      <p class="card-text">Place holder of showing the results of the 2 drop down conversion.</p>
+                      <p class="card-text" id="convertedValue">Place holder of showing the results of the 2 drop down conversion.</p>
                     </div>
                 </div>
             </section>
