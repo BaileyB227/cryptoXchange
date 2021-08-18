@@ -100,7 +100,20 @@ function convertOptions(){
                 $("#currencyChoice").text($currencyChoice);
                 $("#cryptoChoice").text($cryptoChoice);
             }
+
+        storeInfo($cryptoChoice, responseRate, $currencyChoice);
         }
             )
     })
+}
+
+
+function storeInfo($cryptoChoice, responseRate, $currencyChoice){
+    let converts = $cryptoChoice + " is " + responseRate + $currencyChoice
+    let prevConverts = JSON.parse(localStorage.getItem('history')) || [] ;
+    prevConverts.unshift(converts)
+    if(prevConverts.length > 5) { 
+        prevConverts.pop();
+        }
+    localStorage.setItem('history', JSON.stringify(prevConverts))
 }
