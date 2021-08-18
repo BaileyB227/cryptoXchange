@@ -102,11 +102,32 @@ function convertOptions(){
                 
             }
 
+        storeInfo($cryptoChoice, responseRate, $currencyChoice);
         }
             )
     })
 }
 
 
+function storeInfo($cryptoChoice, responseRate, $currencyChoice){
+    let converts = $cryptoChoice + " is " + responseRate + " in "+ $currencyChoice
+    let prevConverts = JSON.parse(localStorage.getItem('history')) || [] ;
+    prevConverts.unshift(converts)
+    if(prevConverts.length > 5) { 
+        prevConverts.pop();
+        }
+    localStorage.setItem('history', JSON.stringify(prevConverts))
+    displayHistory();
+}
 
+function displayHistory(){
+    const historyArray = JSON.parse(localStorage.getItem('history'));
+    
+    $("#newest").text(historyArray[0]);
+    $("#second").text(historyArray[1]);
+    $("#third").text(historyArray[2]);
+    $("#fourth").text(historyArray[3]);
+    $("#fifth").text(historyArray[4]);
+}
 
+displayHistory();
