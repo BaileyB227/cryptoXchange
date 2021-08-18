@@ -141,7 +141,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
     <li>Bailey Bennett - baileyb227@gmail.com</li>
     <li>Prany Davey - 77269d@gmail.com</li>
     <li>Dylan Fontenot - dylanfontenot@protonmail.com</li>
+<<<<<<< HEAD
     <li>Jeffrey McLeod - </li>
+=======
+    <li>Jeffrey McLeod - jeffreymmcleod@outlook.com</li>
+>>>>>>> 6950eb3745a29711e7ff0b867153f6bcc040d5ce
 
 Project Link: [https://https://github.com/BaileyB227/Project1](https://https://github.com/BaileyB227/Project1)
 
