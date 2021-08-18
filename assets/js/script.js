@@ -127,5 +127,6 @@ function displayHistory(){
     $("#third").text(historyArray[2]);
     $("#fourth").text(historyArray[3]);
     $("#fifth").text(historyArray[4]);
-
 }
+
+displayHistory();
