@@ -33,42 +33,72 @@ function convertOptions(){
             if ($currencyChoice === "USD") {
                 responseRate = responseRate.USD.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "EUR") {
                 responseRate = responseRate.EUR.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "JPY") {
                 responseRate = responseRate.JPY.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "GBP") {
                 responseRate = responseRate.GBP.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "AUD") {
                 responseRate = responseRate.AUD.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "CAD") {
                 responseRate = responseRate.CAD.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "CHF") {
                 responseRate = responseRate.CHF.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "CNY") {
                 responseRate = responseRate.CNY.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "HKD") {
                 responseRate = responseRate.HKD.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
             if ($currencyChoice === "NZD") {
                 responseRate = responseRate.NZD.rate_for_amount
                 console.log(responseRate)
+                $("#convertedValue").text(responseRate);
+                $("#currencyChoice").text($currencyChoice);
+                $("#cryptoChoice").text($cryptoChoice);
             }
         }
             )
