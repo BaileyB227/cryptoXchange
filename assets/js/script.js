@@ -99,8 +99,14 @@ function convertOptions(){
                 $("#convertedValue").text(responseRate);
                 $("#currencyChoice").text($currencyChoice);
                 $("#cryptoChoice").text($cryptoChoice);
+                
             }
+
         }
             )
     })
 }
+
+
+
+
