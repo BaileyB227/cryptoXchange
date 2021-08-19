@@ -1,9 +1,13 @@
+body {
+    background-color: #666;
+}
+
+
 .container{   
     display: flex;
     justify-content: center;
     padding: 10px;
     border-radius: 50px;
- 
 }  
 
 
@@ -63,7 +67,7 @@
     border-radius: 50px;
     padding: 10px;
     flex: 0 0 300px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 10px 10px 5px grey;
     margin: 20px;
 }
 
@@ -73,6 +77,12 @@
     justify-content: space-around;
 }
 
-.headerText {
-  font-size: 48px;
+.convertedText {
+    font-size: 30px;
+    color: white;
+}
+
+.text1 {
+    font-size: 10rem;
+    font-weight:600;
 }
