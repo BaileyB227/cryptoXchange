@@ -56,7 +56,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-For Project 1, Group 1 will create a platform to convert commonly traded cryptocurrencies to their values in currencies around the world. We are using lunarcrush.com and fixer.io APIs and will compare them with dropdown menu selectors. The comparison will convert the crypto from USD to the local currency that it would cost. We will show a list of the currency selected and up to the 5 previous search results.
+For Project 1, Group 1 will create a platform to convert commonly traded cryptocurrencies to their values in currencies around the world. We are using rapidapi.com and lunarcrush.com APIs and will compare them with dropdown menu selectors. The comparison will convert the crypto from USD to the local currency that it would cost. We will show a list of the currency selected and up to the 5 previous search results.
 
 ### Built With
 
