@@ -38,7 +38,7 @@ function convertOptions(){
         .then(headers => headers.json())
         .then(response => {let responseRate = response.rates
 
-            // Copy this one for each currency
+            // Takes currency value, converts into USD
             if ($currencyChoice === "USD") {
                 responseRate = responseRate.USD.rate_for_amount
                 console.log(responseRate)
@@ -119,7 +119,7 @@ function convertOptions(){
     })
 }
 
-
+// Shows history of last 5 searches in local storage
 function storeInfo($cryptoChoice, responseRate, $currencyChoice){
     let converts = $cryptoChoice + " is " + responseRate + " in "+ $currencyChoice
     let prevConverts = JSON.parse(localStorage.getItem('history')) || [] ;
@@ -131,6 +131,7 @@ function storeInfo($cryptoChoice, responseRate, $currencyChoice){
     displayHistory();
 }
 
+//  Displays local storage search history
 function displayHistory(){
     const historyArray = JSON.parse(localStorage.getItem('history'));
     let img1 = document.getElementById("img1");
