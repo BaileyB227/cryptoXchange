@@ -160,6 +160,7 @@ Project Link: [https://https://github.com/BaileyB227/Project1](https://https://g
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
+* [Crypto Icons](http://cryptoicons.co/)
 
 
 
