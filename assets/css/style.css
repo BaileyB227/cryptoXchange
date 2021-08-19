@@ -25,3 +25,9 @@
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
 }
+
+.mainBodyHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

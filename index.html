@@ -55,9 +55,8 @@
             </row>
             <!-- Displays the results for the selected 2 items -->
             <section class="mainCard">
-                <div class="">
-                    <img src="" class="card-img-top" alt="placeholder for crypto image"><span id="cryptoValue"></span>
-                    <img src="" class="card-img-top" alt="placeholder for currency image"><span id="currencyValue"></span>
+                <div class="mainBodyHolder">
+                    <img id="leftImage" class="card-img-top" alt="placeholder for crypto image"><span id="cryptoValue"></span>
                     <div class="card-body">
                       <p class="card-text">
                         <span id="cryptoChoice"></span> costs
@@ -65,6 +64,7 @@
                         <span id="currencyChoice"></span>
                       </p>
                     </div>
+                    <img id="rightImage" class="card-img-top" alt="placeholder for currency image"><span id="currencyValue"></span>
                 </div>
             </section>
 
@@ -72,33 +72,38 @@
       <footer>
           <!-- Displays your most recent 5 searches -->
           <section class="row">
-            <div class="card text-center previousResults" style="width: 18rem;">
+            <div id="card1" class="card text-center previousResults" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title" id="newest">This will display what crypto to what currency</h5>
+                  <h5 id="newest" class="card-title">This will display what crypto to what currency</h5>
+                  <img id="img1" alt="Crypto Icon"/>
                 </div>
               </div>
               
               <div class="card text-center previousResults" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title" id="second">This will display what crypto to what currency</h5>
+                  <img id="img2" alt="Crypto Icon"/>
                 </div>
               </div>
               
               <div class="card text-center previousResults" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title" id="third">This will display what crypto to what currency</h5>
+                  <img id="img3" alt="Crypto Icon"/>
                 </div>
               </div>
 
               <div class="card text-center previousResults" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title" id="fourth">This will display what crypto to what currency</h5>
+                  <img id="img4" alt="Crypto Icon"/>
                 </div>
               </div>
 
               <div class="card text-center previousResults" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title" id="fifth">This will display what crypto to what currency</h5>
+                  <img id="img5" alt="Crypto Icon"/>
                 </div>
               </div>
 

@@ -1,8 +1,14 @@
 let apiKeyCrypto = 'fregfzsfixaw8mmf6bd7';
+let cryptoImage = document.getElementById("leftImage");
+let currencyImage = document.getElementById("rightImage");
+cryptoImage.setAttribute("src", "./assets/images/BTC.png");
+currencyImage.setAttribute("src", "./assets/images/USD.png");
+
 
 // Convert button, puts converted value in box and adds to local storage
 $("#convertBtn").on("click", function(){
     convertOptions();
+    
 })
 
 function convertOptions(){
@@ -19,6 +25,9 @@ function convertOptions(){
         console.log($currencyChoice)
         let currencyURL = `https://currency-converter5.p.rapidapi.com/currency/convert?format=json&from=USD&to=${$currencyChoice}&amount=${cryptoValue}`
         
+        
+        cryptoImage.setAttribute("src", `./assets/images/${$cryptoChoice}.png`);
+
         fetch(currencyURL, {
 	    "method": "GET",
 	    "headers": {
@@ -101,6 +110,9 @@ function convertOptions(){
                 $("#cryptoChoice").text($cryptoChoice);
             }
 
+        
+        currencyImage.setAttribute("src", `./assets/images/${$currencyChoice}.png`);
+
         storeInfo($cryptoChoice, responseRate, $currencyChoice);
         }
             )
@@ -121,12 +133,27 @@ function storeInfo($cryptoChoice, responseRate, $currencyChoice){
 
 function displayHistory(){
     const historyArray = JSON.parse(localStorage.getItem('history'));
+    let img1 = document.getElementById("img1");
+    let img2 = document.getElementById("img2");
+    let img3 = document.getElementById("img3");
+    let img4 = document.getElementById("img4");
+    let img5 = document.getElementById("img5");
+
+    let img1Src = historyArray[0].split(" ")[0];
+    let img2Src = historyArray[1].split(" ")[0];
+    let img3Src = historyArray[2].split(" ")[0];
+    let img4Src = historyArray[3].split(" ")[0];
+    let img5Src = historyArray[4].split(" ")[0];
+
+    img1.setAttribute("src", `./assets/images/${img1Src}.png`);
+    img2.setAttribute("src", `./assets/images/${img2Src}.png`); 
+    img3.setAttribute("src", `./assets/images/${img3Src}.png`); 
+    img4.setAttribute("src", `./assets/images/${img4Src}.png`); 
+    img5.setAttribute("src", `./assets/images/${img5Src}.png`);  
     
-    $("#newest").text(historyArray[0]);
+    $("#newest").text(historyArray[0]);    
     $("#second").text(historyArray[1]);
     $("#third").text(historyArray[2]);
     $("#fourth").text(historyArray[3]);
     $("#fifth").text(historyArray[4]);
 }
-
-displayHistory();
