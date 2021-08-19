@@ -140,21 +140,29 @@ function displayHistory(){
     let img4 = document.getElementById("img4");
     let img5 = document.getElementById("img5");
 
-    let img1Src = historyArray[0].split(" ")[0];
-    let img2Src = historyArray[1].split(" ")[0];
-    let img3Src = historyArray[2].split(" ")[0];
-    let img4Src = historyArray[3].split(" ")[0];
-    let img5Src = historyArray[4].split(" ")[0];
-
-    img1.setAttribute("src", `./assets/images/${img1Src}.png`);
-    img2.setAttribute("src", `./assets/images/${img2Src}.png`); 
-    img3.setAttribute("src", `./assets/images/${img3Src}.png`); 
-    img4.setAttribute("src", `./assets/images/${img4Src}.png`); 
-    img5.setAttribute("src", `./assets/images/${img5Src}.png`);  
-    
-    $("#newest").text(historyArray[0]);    
-    $("#second").text(historyArray[1]);
-    $("#third").text(historyArray[2]);
-    $("#fourth").text(historyArray[3]);
-    $("#fifth").text(historyArray[4]);
+    if(historyArray[1]){
+        let img1Src = historyArray[0].split(" ")[0];
+        img1.setAttribute("src", `./assets/images/${img1Src}.png`);
+        $("#newest").text(historyArray[0]);    
+    }
+    if(historyArray[1]){
+        let img2Src = historyArray[1].split(" ")[0];
+        img2.setAttribute("src", `./assets/images/${img2Src}.png`);
+        $("#second").text(historyArray[1]);
+    }
+    if(historyArray[2]){
+        let img3Src = historyArray[2].split(" ")[0];
+        img3.setAttribute("src", `./assets/images/${img3Src}.png`); 
+        $("#third").text(historyArray[2]);
+    }
+    if(historyArray[3]){
+        let img4Src = historyArray[3].split(" ")[0];
+        img4.setAttribute("src", `./assets/images/${img4Src}.png`); 
+        $("#fourth").text(historyArray[3]);
+    }
+    if(historyArray[4]){
+        let img5Src = historyArray[4].split(" ")[0];
+        img5.setAttribute("src", `./assets/images/${img5Src}.png`);
+        $("#fifth").text(historyArray[4]);
+    }    
 }
