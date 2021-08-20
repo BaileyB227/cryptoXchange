@@ -140,7 +140,7 @@ function displayHistory(){
     let img4 = document.getElementById("img4");
     let img5 = document.getElementById("img5");
 
-    if(historyArray[1]){
+    if(historyArray[0]){
         let img1Src = historyArray[0].split(" ")[0];
         img1.setAttribute("src", `./assets/images/${img1Src}.png`);
         $("#newest").text(historyArray[0]);    
